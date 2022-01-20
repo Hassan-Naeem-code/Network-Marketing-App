@@ -1,17 +1,15 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
-import { Appbar } from 'react-native-paper';
-import {
-  StyleSheet,
-} from 'react-native';
+import {Appbar} from 'react-native-paper';
+import {StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { DrawerActions } from 'react-navigation-drawer';
+import {DrawerActions} from 'react-navigation-drawer';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AppStyles } from './appStyle';
-import { takeImageUsingCamera } from './opencamera';
+import {AppStyles} from './appStyle';
+import {takeImageUsingCamera} from './opencamera';
 
-const TopHeader = (props) => {
-  const { title, subtitle, keyValue, navigation, takeSlipPhoto } = props;
+const TopHeader = props => {
+  const {title, subtitle, keyValue, navigation, takeSlipPhoto} = props;
 
   const _goBack = () => navigation.goBack();
 
@@ -22,7 +20,12 @@ const TopHeader = (props) => {
 
   const displayIconsLeftIcon = () => {
     if (keyValue === 'home') {
-      return <Appbar.Action icon="menu" onPress={() => navigation.dispatch(DrawerActions.openDrawer())} />;
+      return (
+        <Appbar.Action
+          icon="menu"
+          onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+        />
+      );
     } else {
       return <Appbar.BackAction onPress={_goBack} />;
     }
@@ -30,7 +33,12 @@ const TopHeader = (props) => {
 
   const displayIconsRightIcon = () => {
     if (keyValue === 'pay') {
-      return <Appbar.Action icon="camera" onPress={() => takeImageUsingCamera(takeSlipPhoto)} />;
+      return (
+        <Appbar.Action
+          icon="camera"
+          onPress={() => takeImageUsingCamera(takeSlipPhoto)}
+        />
+      );
     }
     if (keyValue !== 'login') {
       return <Appbar.Action icon="logout" onPress={signOutAsync} />;
@@ -47,7 +55,6 @@ const TopHeader = (props) => {
 };
 
 export default TopHeader;
-
 
 const styles = StyleSheet.create({
   headerStyle: {
