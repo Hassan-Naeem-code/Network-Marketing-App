@@ -59,3 +59,33 @@ const App: () => Node = () => {
 };
 
 export default App;
+  const onRecieveNotification = () => {};
+  return (
+    <React.Fragment>
+      <SafeAreaProvider>
+        <Provider store={userDetails}>
+          <Nav />
+          <Loader />
+          <FlashPopup />
+        </Provider>
+      </SafeAreaProvider>
+    </React.Fragment>
+  );
+};
+
+export default App;
+  const onRecieveNotification = () => {};
+  return (
+    <React.Fragment>
+      <SafeAreaProvider>
+        <Provider store={userDetails}>
+          <Nav />
+          <Loader />
+          <FlashPopup />
+        </Provider>
+      </SafeAreaProvider>
+    </React.Fragment>
+  );
+};
+
+export default App;
