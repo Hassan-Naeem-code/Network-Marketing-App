@@ -1,12 +1,3 @@
-/* eslint-disable prettier/prettier */
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import type {Node} from 'react';
 
@@ -44,68 +35,6 @@ const App: () => Node = () => {
     },
   );
 
-  const onRecieveNotification = () => {};
-  return (
-    <React.Fragment>
-      <SafeAreaProvider>
-        <Provider store={userDetails}>
-          <Nav />
-          <Loader />
-          <FlashPopup />
-        </Provider>
-      </SafeAreaProvider>
-    </React.Fragment>
-  );
-};
-
-export default App;
-  const onRecieveNotification = () => {};
-  return (
-    <React.Fragment>
-      <SafeAreaProvider>
-        <Provider store={userDetails}>
-          <Nav />
-          <Loader />
-          <FlashPopup />
-        </Provider>
-      </SafeAreaProvider>
-    </React.Fragment>
-  );
-};
-
-export default App;
-  const onRecieveNotification = () => {};
-  return (
-    <React.Fragment>
-      <SafeAreaProvider>
-        <Provider store={userDetails}>
-          <Nav />
-          <Loader />
-          <FlashPopup />
-        </Provider>
-      </SafeAreaProvider>
-    </React.Fragment>
-  );
-};
-
-export default App;
-export default App;
-  const onRecieveNotification = () => {};
-  return (
-    <React.Fragment>
-      <SafeAreaProvider>
-        <Provider store={userDetails}>
-          <Nav />
-          <Loader />
-          <FlashPopup />
-        </Provider>
-      </SafeAreaProvider>
-    </React.Fragment>
-  );
-};
-
-export default App;
-export default App;
   const onRecieveNotification = () => {};
   return (
     <React.Fragment>
